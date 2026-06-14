@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>科乐奇屿前端生成进度</title>
+    <style>
+      * { box-sizing: border-box; }
+      body { margin: 0; font-family: "PingFang SC", "Microsoft YaHei", sans-serif; color: #20243a; background: #f1f5ff; }
+      main { width: min(1100px, calc(100% - 32px)); margin: 40px auto; }
+      header { padding: 36px; border-radius: 28px; color: #fff; background: linear-gradient(135deg, #5c7cff, #8d68e8); box-shadow: 0 20px 50px #596ad733; }
+      h1 { margin: 0 0 10px; font-size: clamp(28px, 5vw, 48px); }
+      header p { margin: 0; opacity: .86; }
+      .summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin: 24px 0; }
+      .metric, .panel { padding: 24px; border: 1px solid #fff; border-radius: 22px; background: #ffffffcc; box-shadow: 0 12px 30px #52628a18; }
+      .metric strong { display: block; margin-bottom: 8px; font-size: 34px; color: #5368ed; }
+      .panel { margin-bottom: 24px; }
+      h2 { margin-top: 0; }
+      .progress { height: 14px; overflow: hidden; border-radius: 999px; background: #e6eaff; }
+      .progress i { display: block; width: 75%; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #5368ed, #9b68e9); }
+      .screens { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+      .screen { display: flex; align-items: center; gap: 14px; padding: 16px; border-radius: 16px; background: #f5f7ff; }
+      .screen b { display: grid; place-items: center; width: 42px; height: 42px; flex: 0 0 42px; border-radius: 13px; color: #fff; background: #596eee; }
+      .screen span { display: block; color: #68708c; font-size: 13px; margin-top: 4px; }
+      .flow { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+      .flow span { padding: 9px 13px; border-radius: 999px; background: #eef1ff; }
+      .flow i { color: #7985bd; font-style: normal; }
+      .actions { display: flex; gap: 12px; margin-top: 25px; }
+      a { display: inline-block; padding: 13px 20px; border-radius: 12px; color: #fff; text-decoration: none; background: #5368ed; }
+      a.secondary { color: #5368ed; background: #eef1ff; }
+      @media (max-width: 700px) { .summary, .screens { grid-template-columns: 1fr; } header { padding: 26px; } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>科乐奇屿生成进度</h1>
+        <p>根据 Figma PAD APP 设计稿持续生成与连接交互 · 最新更新：Frame 119 自然资源实验列表</p>
+      </header>
+
+      <section class="summary">
+        <article class="metric"><strong>7</strong>已完成界面</article>
+        <article class="metric"><strong>100%</strong>当前交互已连接</article>
+        <article class="metric"><strong>88%</strong>当前阶段进度</article>
+      </section>
+
+      <section class="panel">
+        <h2>总体进度</h2>
+        <div class="progress"><i style="width: 88%"></i></div>
+      </section>
+
+      <section class="panel">
+        <h2>已完成界面</h2>
+        <div class="screens">
+          <article class="screen"><b>33</b><div>登录界面<span>登录、取消、表单校验</span></div></article>
+          <article class="screen"><b>62</b><div>学生端首页<span>AI、测试、实验空间入口</span></div></article>
+          <article class="screen"><b>39</b><div>问 AI 入口页<span>AI 伙伴与微影像入口</span></div></article>
+          <article class="screen"><b>43</b><div>小元灵对话页<span>消息发送、工具切换</span></div></article>
+          <article class="screen"><b>47</b><div>AI 微影像工作台<span>提示词、图片与语音入口</span></div></article>
+          <article class="screen"><b>45</b><div>实验空间列表<span>精确色板、单元贴图、布局与实验入口</span></div></article>
+          <article class="screen"><b>119</b><div>自然资源实验列表<span>三张源图、自然资源实验与双向导航</span></div></article>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>最新成果</h2>
+        <div class="screens">
+          <article class="screen"><b>✓</b><div>Frame 45 色板优化<span>恢复源稿蓝紫背景、内容面板和半透明卡片层级</span></div></article>
+          <article class="screen"><b>✓</b><div>Frame 45 布局优化<span>修正第三单元模块尺寸、位置、文字与图片比例</span></div></article>
+          <article class="screen"><b>✓</b><div>单元图片修复<span>替换三张最新 Figma 源图，单独优化植物图片显示</span></div></article>
+          <article class="screen"><b>✓</b><div>交互保持完整<span>首页进入实验空间、返回首页、单元选择与实验入口</span></div></article>
+          <article class="screen"><b>✓</b><div>Frame 119 新增<span>贴入天气、自然资源、植物工厂源图并接入双向导航</span></div></article>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>交互流程</h2>
+        <div class="flow">
+          <span>33 登录</span><i>→</i><span>62 首页</span><i>→</i><span>39 问 AI</span><i>→</i><span>43 对话 / 47 微影像</span>
+          <span>62 首页</span><i>→</i><span>45 实验空间</span><i>→</i><span>119 自然资源列表</span>
+        </div>
+        <div class="actions">
+          <a href="./index.html">查看当前成品应用</a>
+          <a class="secondary" href="./progress.html">刷新进度</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

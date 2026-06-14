@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>科乐奇屿</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="stage">
+      <section class="tablet" aria-label="科乐奇屿学生端">
+        <div class="view login-screen active" data-view="login">
+          <div class="statusbar">
+            <b>9:41</b>
+            <span>▂▄▆█　◔　▭</span>
+          </div>
+
+          <div class="welcome-face" aria-hidden="true">
+            <span>&gt;</span>
+            <span>&lt;</span>
+          </div>
+          <h1>WELCOM:)</h1>
+
+          <form class="login-form">
+            <label>
+              <strong>账号：</strong>
+              <input id="student-id" name="studentId" autocomplete="username" placeholder="输入学籍号" />
+            </label>
+            <label>
+              <strong>密码：</strong>
+              <input
+                id="student-password"
+                name="password"
+                type="password"
+                inputmode="numeric"
+                autocomplete="current-password"
+                placeholder="输入学号后六位"
+              />
+            </label>
+            <p class="form-error" role="alert"></p>
+            <div class="login-actions">
+              <button class="cancel-button" type="reset">取消</button>
+              <button class="confirm-button" type="submit">确认</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="view home-screen" data-view="home">
+          <div class="statusbar">
+            <b>9:41</b>
+            <span>▂▄▆█　◔　▭</span>
+          </div>
+
+          <button class="profile" type="button" aria-label="退出登录">
+            <span class="avatar">👨🏻‍🚀</span>
+            <b>⌄</b>
+            <em>欢迎，六年级一班的小明同学</em>
+          </button>
+
+          <button class="card ai-card" type="button" data-navigate="ai-menu">
+            <img
+              src="https://www.figma.com/api/mcp/asset/ce015c26-d319-4d9d-a749-41f08c7b51de"
+              alt="AI 科学伙伴小元灵"
+            />
+            <span>有什么问题可以问我哦~</span>
+          </button>
+
+          <button class="card test-card" type="button" data-navigate="quiz-61">
+            <strong>随堂测试<i></i></strong>
+            <span>叮，收到了老师的新任务</span>
+            <img
+              src="https://www.figma.com/api/mcp/asset/c1f8b960-3eb2-48b1-97b2-4e880f6180c2"
+              alt="书本和铅笔"
+            />
+          </button>
+
+          <button class="card lab-card" type="button" data-navigate="experiment-list">
+            <strong>实验空间</strong>
+            <span>试着动手做 知识吸收快</span>
+            <img
+              src="https://www.figma.com/api/mcp/asset/54d10e95-0e95-4afe-83e3-7db8b771720d"
+              alt="实验器材"
+            />
+          </button>
+
+          <a class="card teacher-card" href="./teacher/index.html" aria-label="打开教师端后台">
+            <strong>教师端后台</strong>
+            <span>查看班级数据、AI<br />出题与教学资源</span>
+            <em>进入后台</em>
+          </a>
+
+        </div>
+
+        <div class="view ai-menu-screen" data-view="ai-menu">
+          <div class="statusbar">
+            <b>9:41</b>
+            <span>▂▄▆█　◔　▭</span>
+          </div>
+
+          <button class="page-back" type="button" data-navigate="home" aria-label="返回首页">
+            <span>‹</span>
+            <strong>问AI</strong>
+          </button>
+
+          <article class="ai-option partner-option">
+            <h2>AI伙伴“小元灵”</h2>
+            <p>有什么不懂的？问问小元灵吧！</p>
+            <button type="button" data-navigate="ai-chat">进入</button>
+          </article>
+
+          <article class="ai-option micro-option">
+            <h2>AI 微影像生成</h2>
+            <p>观察肉眼看不到的细节</p>
+            <button type="button" data-navigate="micro-gen">进入</button>
+            <img
+              src="https://www.figma.com/api/mcp/asset/d180d292-0bc2-4680-96ee-b839e2e2e617"
+              alt="显微镜"
+            />
+          </article>
+        </div>
+
+        <div class="view ai-chat-screen" data-view="ai-chat">
+          <div class="statusbar">
+            <b>9:41</b>
+            <span>▂▄▆█　◔　▭</span>
+          </div>
+
+          <button class="page-back" type="button" data-navigate="ai-menu" aria-label="返回问 AI">
+            <span>‹</span>
+            <strong>问AI</strong>
+          </button>
+
+          <section class="chat-welcome">
+            <img
+              src="https://www.figma.com/api/mcp/asset/5a95ee6a-2419-4277-845d-8d8b74c02195"
+              alt="小元灵"
+            />
+            <p>嗨，我是你的好朋友小元灵！<br />我能解答你所有的奇思妙想。嗯~你有什么科学疑惑呢？</p>
+          </section>
+
+          <div class="chat-messages" aria-live="polite"></div>
+
+          <form class="chat-composer">
+            <div class="chat-tools">
+              <button class="tool-button active" type="button" data-tool="thinking">◉　深度思考</button>
+              <button class="tool-button" type="button" data-tool="online">◎　联网搜索</button>
+            </div>
+            <label>
+              <span aria-hidden="true">▣</span>
+              <input name="question" autocomplete="off" placeholder="输入你的科学疑问" />
+              <button type="submit" aria-label="发送问题">➤</button>
+            </label>
+          </form>
+        </div>
+
+        <div class="view micro-gen-screen" data-view="micro-gen">
+          <div class="statusbar">
+            <b>9:41</b>
+            <img
+              class="micro-status-icon"
+              src="https://www.figma.com/api/mcp/asset/9024c515-bfe8-471b-8df2-42cb4c1cb2d9"
+              alt="状态图标"
+            />
+          </div>
+
+          <button class="page-back" type="button" data-navigate="ai-menu" aria-label="返回问 AI">
+            <span class="back-icon-wrap">
+              <img
+                class="back-icon"
+                src="https://www.figma.com/api/mcp/asset/0f5c18f1-a289-47d1-b28d-22da518156a7"
+                alt=""
+              />
+            </span>
+            <strong>AI微影像生成</strong>
+          </button>
+
+          <section class="generation-stage">
+            <p><strong class="generation-title">蚂蚁 3D形象</strong>　<span class="generation-copy">帮我生成一只蚂蚁。</span></p>
+            <img
+              src="https://www.figma.com/api/mcp/asset/6170191c-b6ea-47d7-b190-adf6e708a5dd"
+              alt="蚂蚁 3D 形象"
+            />
+          </section>
+
+          <form class="generation-composer">
+            <button type="button" data-message="请选择参考图片" aria-label="选择参考图片">
+              <img
+                class="upload-icon"
+                src="https://www.figma.com/api/mcp/asset/0065cf73-b19d-40a9-ac40-7ae8f5994e60"
+                alt=""
+              />
+            </button>
+            <label>
+              <input name="prompt" autocomplete="off" placeholder="输入提示词 AI 3D形象生成" />
+              <button type="button" data-message="语音输入已开启" aria-label="语音输入">
+                <img
+                  class="voice-icon"
+                  src="https://www.figma.com/api/mcp/asset/08d7ca93-4f82-43e3-a4a5-aff4ff70255a"
+                  alt=""
+                />
+              </button>
+            </label>
+          </form>
+        </div>
+
+        <div class="view experiment-list-screen" data-view="experiment-list">
+          <div class="statusbar">
+            <b>9:41</b>
+            <span>▂▄▆█　◔　▭</span>
+          </div>
+
+          <button class="page-back experiment-back" type="button" data-navigate="home" aria-label="返回首页">
+            <span>‹</span>
+            <strong>实验空间　六年级·上册·人教鄂教版</strong>
+          </button>
+
+          <section class="experiment-board">
+            <nav class="unit-list" aria-label="实验单元">
+              <button class="unit-card active" type="button" data-unit="物质的变化">
+                <img src="https://www.figma.com/api/mcp/asset/8756a77a-d433-442b-8692-814104478040" alt="物质的变化" />
+                <strong>第一单元<br />物质的变化</strong>
+              </button>
+              <button class="unit-card" type="button" data-unit="田野的生物">
+                <img src="https://www.figma.com/api/mcp/asset/439bf7dd-aed2-4ce7-9420-044a352dcdad" alt="田野的生物" />
+                <strong>第二单元<br />田野的生物</strong>
+              </button>
+              <button class="unit-card" type="button" data-unit="天气的成因">
+                <img src="https://www.figma.com/api/mcp/asset/4eb5c3d9-1118-4a53-a539-5bca6aadc828" alt="天气的成因" />
+                <strong>第三单元<br />天气的成因</strong>
+              </button>
+              <button class="unit-card" type="button" data-unit="自然资源">
+                <img src="https://www.figma.com/api/mcp/asset/0fdfeb83-52d2-4669-bb2e-21fc1fe8e501" alt="自然资源" />
+                <strong>第四单元<br />自然资源</strong>
+              </button>
+              <button class="unit-card factory-unit" type="button" data-unit="建造植物工厂">
+                <img src="https://www.figma.com/api/mcp/asset/607049fa-ded3-48d3-8aa7-ea6a6cdc848f" alt="建造植物工厂" />
+                <strong>第五单元<br />建造“植物工厂”</strong>
+              </button>
+            </nav>
+
+            <div class="lesson-list">
+              <article><div><h2>蜡烛的燃烧</h2><p>12人正在实验</p></div><button type="button" data-message="正在进入“蜡烛的燃烧”实验">进入实验空间</button></article>
+              <article><div><h2>生锈与防锈</h2><p>12人正在实验</p></div><button type="button" data-message="正在进入“生锈与防锈”实验">进入实验空间</button></article>
+              <article><div><h2>颜色的变化</h2><p>12人正在实验</p></div><button type="button" data-message="正在进入“颜色的变化”实验">进入实验空间</button></article>
+              <article><div><h2>单元回顾</h2><p>12人正在实验</p></div><button type="button" data-message="正在进入单元回顾">进入实验空间</button></article>
+            </div>
+          </section>
+        </div>
+
+        <div class="view resource-overview-screen" data-view="resource-overview">
+          <div class="statusbar">
+            <b>9:41</b>
+            <span>▂▄▆█　◔　▭</span>
+          </div>
+
+          <button class="page-back resource-back" type="button" data-navigate="experiment-list" aria-label="返回实验空间">
+            <span>‹</span>
+            <strong>实验空间　第四单元 自然资源</strong>
+          </button>
+
+          <section class="resource-showcase">
+            <article class="resource-card resource-card-a">
+              <h2>各种自然资源</h2>
+              <img src="https://www.figma.com/api/mcp/asset/9cf2d58d-9eee-422b-8857-0c8c7e7f6600" alt="各种自然资源" />
+              <p>观察自然界中的各种自然资源的运用</p>
+            </article>
+            <article class="resource-card resource-card-b">
+              <h2>煤、石油和天然气</h2>
+              <img src="https://www.figma.com/api/mcp/asset/e1255d83-3b8d-44bc-bb26-34afe0a724e1" alt="煤、石油和天然气" />
+              <p>了解自然界中的各种不可再生资源运用于哪些途径</p>
+            </article>
+            <article class="resource-card resource-card-c">
+              <h2>风能和水能</h2>
+              <img src="https://www.figma.com/api/mcp/asset/2994265a-6933-4918-babf-0b969ef0bf68" alt="风能和水能" />
+              <p>催动风车和水车，观察灯泡的发光情况，了解风能和水能的运用</p>
+            </article>
+          </section>
+
+          <button class="start-experiment" type="button" data-message="自然资源实验已开始">开始实验</button>
+        </div>
+
+        <div class="view quiz-screen quiz-screen-61" data-view="quiz-61">
+          <img class="quiz-bg-img" src="https://www.figma.com/api/mcp/asset/da681ec3-369a-4bc8-97a9-f450a69f662e" alt="" />
+          <div class="statusbar">
+            <b>9:41</b>
+            <span>▂▄▆█　◔　▭</span>
+          </div>
+
+          <button class="page-back quiz-back" type="button" data-navigate="home" aria-label="返回首页">
+            <span>‹</span>
+            <strong>随堂测试</strong>
+          </button>
+
+          <section class="quiz-paper">
+            <div class="quiz-tab">
+              <span class="tab-pin"></span>
+              <strong>自然资源</strong>
+              <i></i>
+            </div>
+            <div class="quiz-strap">我爱科学，我很棒！</div>
+            <div class="quiz-vial"><span>1/10</span></div>
+            <h2>下列哪种东西是利用风能来工作的？</h2>
+            <div class="quiz-options">
+              <button class="selected" type="button" data-answer="A"><em>A</em>太阳能计算器</button>
+              <button type="button" data-answer="B"><em>B</em>田野里的大风车</button>
+              <button type="button" data-answer="C"><em>C</em>烧煤的发电厂</button>
+              <button type="button" data-answer="D"><em>D</em>手摇式手电筒</button>
+            </div>
+          </section>
+
+          <button class="quiz-nav quiz-next" type="button" data-navigate="quiz-104" aria-label="下一题">›</button>
+        </div>
+
+        <div class="view quiz-screen quiz-screen-104" data-view="quiz-104">
+          <img class="quiz-bg-img" src="https://www.figma.com/api/mcp/asset/cfd7bc29-3629-47ce-8005-f9a17422cf1f" alt="" />
+          <div class="statusbar">
+            <b>9:41</b>
+            <span>▂▄▆█　◔　▭</span>
+          </div>
+
+          <button class="page-back quiz-back" type="button" data-navigate="home" aria-label="返回首页">
+            <span>‹</span>
+            <strong>随堂测试</strong>
+          </button>
+
+          <section class="quiz-paper">
+            <div class="quiz-tab">
+              <span class="tab-pin"></span>
+              <strong>自然资源</strong>
+              <i></i>
+            </div>
+            <div class="quiz-strap">我爱科学，我很棒！</div>
+            <div class="quiz-vial"><span>2/10</span></div>
+            <h2>下面全部属于可再生资源的一组是？</h2>
+            <div class="quiz-options">
+              <button class="selected" type="button" data-answer="A"><em>A</em>太阳能、风能、森林</button>
+              <button type="button" data-answer="B"><em>B</em>煤炭、石油、天然气</button>
+              <button type="button" data-answer="C"><em>C</em>钢铁、水泥、塑料</button>
+              <button type="button" data-answer="D"><em>D</em>土壤、岩石、矿产</button>
+            </div>
+          </section>
+
+          <button class="quiz-nav quiz-prev" type="button" data-navigate="quiz-61" aria-label="上一题">‹</button>
+          <button class="quiz-nav quiz-next" type="button" data-navigate="quiz-result" aria-label="下一步">›</button>
+        </div>
+
+        <div class="view quiz-screen quiz-result-screen" data-view="quiz-result">
+          <img class="quiz-bg-img" src="https://www.figma.com/api/mcp/asset/7b76e6b2-f62c-4231-b273-3c4669aa3771" alt="" />
+          <div class="statusbar">
+            <b>9:41</b>
+            <span>▂▄▆█　◔　▭</span>
+          </div>
+
+          <button class="page-back quiz-back" type="button" data-navigate="home" aria-label="返回首页">
+            <span>‹</span>
+            <strong>随堂测试</strong>
+          </button>
+
+          <section class="quiz-paper summary-paper">
+            <div class="quiz-tab">
+              <span class="tab-pin"></span>
+              <strong>自然资源</strong>
+              <i></i>
+            </div>
+            <div class="quiz-strap">我爱科学，我很棒！</div>
+            <div class="summary-copy">
+              <p class="summary-line summary-line-1">本次答题共<span>10</span>题</p>
+              <p class="summary-line summary-line-2">你答对了<span>8</span>题</p>
+              <p class="summary-line summary-line-3">第<span>3</span>题和第<span>6</span>题答错了</p>
+            </div>
+            <h2 class="summary-encourage">加油，再接再厉</h2>
+            <button class="summary-action" type="button" data-navigate="quiz-explain">查看错题解析</button>
+          </section>
+        </div>
+
+        <div class="view quiz-screen quiz-explain-screen" data-view="quiz-explain">
+          <img class="quiz-bg-img" src="https://www.figma.com/api/mcp/asset/86fda533-49ac-4173-85ec-53a800d32821" alt="" />
+          <div class="statusbar">
+            <b>9:41</b>
+            <span>▂▄▆█　◔　▭</span>
+          </div>
+
+          <button class="page-back quiz-back" type="button" data-navigate="quiz-result" aria-label="返回答题结果">
+            <span>‹</span>
+            <strong>随堂测试</strong>
+          </button>
+
+          <section class="quiz-paper explain-paper">
+            <div class="quiz-tab">
+              <span class="tab-pin"></span>
+              <strong>自然资源</strong>
+              <i></i>
+            </div>
+            <div class="quiz-strap">我爱科学，我很棒！</div>
+            <div class="explain-copy">
+              <h2>关于矿产资源的说法，正确的是？</h2>
+              <p class="choice-line">你的选择：D.开采矿产资源不会对环境造成任何影响</p>
+              <p class="answer-line">正确答案：C.矿产资源通常埋藏在地下，属于不可再生资源</p>
+              <h3>解析：矿产资源是经过数百万年甚至上亿年才形成<br />的，相对于人类的历史来说是不可再生的。它们的<br />储量有限，且开采过程会对环境造成破坏。</h3>
+            </div>
+            <div class="explain-actions">
+              <button type="button" data-message="已切换到下一道错题">下一道</button>
+              <button type="button" data-navigate="home">返回首页</button>
+            </div>
+          </section>
+        </div>
+
+        <div class="view experiment-canvas-screen" data-view="experiment-canvas">
+          <img class="canvas-bg-img" src="https://www.figma.com/api/mcp/asset/1f39c60f-5542-4006-b7b6-2a5840148e23" alt="" />
+          <button class="canvas-back" type="button" data-navigate="quiz-104" aria-label="返回测试">
+            <img src="https://www.figma.com/api/mcp/asset/b3918aa6-765f-44cc-92cc-a825c36623e2" alt="" />
+          </button>
+          <button class="canvas-control canvas-plus" type="button" data-message="已放大观察区域">
+            <img src="https://www.figma.com/api/mcp/asset/9a87af68-ff87-4e7b-8e6d-0b40ff6adbf6" alt="放大" />
+          </button>
+          <button class="canvas-control canvas-minus" type="button" data-message="已缩小观察区域">
+            <img src="https://www.figma.com/api/mcp/asset/aeab13c2-8407-4290-bb23-8f8720794235" alt="缩小" />
+          </button>
+        </div>
+
+        <div class="toast" role="status" aria-live="polite"></div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
