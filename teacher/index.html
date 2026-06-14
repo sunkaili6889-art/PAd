@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>科乐智核 - Figma Flow</title>
+    <link rel="stylesheet" href="./styles.css?v=ai-bank-all-publish-compact-layout" />
+  </head>
+  <body>
+    <main class="viewport">
+      <section class="app-shell" aria-label="科乐智核教师端">
+        <aside class="sidebar">
+          <div class="brand">
+            <span class="brand-mark"><img class="brand-logo-img" src="https://www.figma.com/api/mcp/asset/a2cc02ed-f6ca-4e72-8e16-fbf4b5b8eef0" alt="" /></span>
+            <span>科乐智核</span>
+          </div>
+          <nav class="nav" aria-label="主导航">
+            <button class="nav-item active" data-screen-target="overview">
+              <span class="nav-icon"><img src="https://www.figma.com/api/mcp/asset/6d06d0c7-bfbc-42f4-a65d-74a7492ba492" alt="" /></span><span>数据总览</span>
+            </button>
+            <button class="nav-item" data-screen-target="question-empty">
+              <span class="nav-icon"><img src="https://www.figma.com/api/mcp/asset/86600668-8432-424b-b353-f0359b144920" alt="" /></span><span>AI出题</span>
+            </button>
+            <button class="nav-item with-children" data-screen-target="teaching">
+              <span class="nav-icon"><img src="https://www.figma.com/api/mcp/asset/49956ce3-3201-4325-9922-83781af91dd0" alt="" /></span><span>教学中心</span><span class="chevron"><img src="https://www.figma.com/api/mcp/asset/f965c7c6-c812-4658-ab8c-218d36d3d2cc" alt="" /></span>
+            </button>
+            <div class="subnav">
+              <button class="subnav-item active" data-screen-target="teaching">课前</button>
+              <button class="subnav-item" data-screen-target="class-experiment">课中</button>
+              <button class="subnav-item" data-screen-target="after-class-homework">课后</button>
+            </div>
+            <button class="nav-item" data-screen-target="student-portraits">
+              <span class="nav-icon"><img src="https://www.figma.com/api/mcp/asset/bce71aa5-1577-46df-bc32-f175d19bf8a6" alt="" /></span><span>学生画像</span>
+            </button>
+            <button class="nav-item" data-screen-target="teaching-resources">
+              <span class="nav-icon"><img src="https://www.figma.com/api/mcp/asset/0de78308-2e24-4d6a-b71b-1e655d56cffc" alt="" /></span><span>教学资源</span>
+            </button>
+          </nav>
+        </aside>
+
+        <section class="workspace">
+          <header class="topbar">
+            <div class="class-picker"><span>班级：</span><button>六年级1班<span class="class-chevron"><img src="https://www.figma.com/api/mcp/asset/06eb880f-6904-49a0-afd9-c9938f171619" alt="" /></span></button></div>
+            <div class="profile">
+              <span class="tiny-icon"><img src="https://www.figma.com/api/mcp/asset/69b2a498-55dd-4b3e-a6ee-f063e5c614fc" alt="" /></span>
+              <span class="tiny-icon"><img src="https://www.figma.com/api/mcp/asset/7b54d0dc-a282-48c1-8420-c3f247e5d47a" alt="" /></span>
+              <span class="divider"></span>
+              <span class="avatar">L</span>
+              <span>Larry</span>
+              <span class="user-chevron"><img src="https://www.figma.com/api/mcp/asset/d629b9de-68b9-496a-a587-12d9dfb809b0" alt="" /></span>
+            </div>
+          </header>
+
+          <div class="screen active" id="overview" data-frame="52">
+            <div class="overview-grid">
+              <section class="card stats-card">
+                <h1>数据总览</h1>
+                <div class="stats">
+                  <div class="stat">
+                    <img src="https://www.figma.com/api/mcp/asset/3355b1c9-5c56-4c4a-80ee-189f35f86cee" alt="" />
+                    <strong>35 <small>人</small></strong>
+                    <span>课前预习完成人数</span>
+                  </div>
+                  <div class="stat">
+                    <img src="https://www.figma.com/api/mcp/asset/86f8de9b-7508-4cc3-8628-6a4d3d85ca38" alt="" />
+                    <strong>35 <small>人</small></strong>
+                    <span>课中实验完成人数</span>
+                  </div>
+                  <div class="stat">
+                    <img src="https://www.figma.com/api/mcp/asset/273427b8-11f5-4726-8d29-ff97a2aa5538" alt="" />
+                    <strong>28 <small>人</small></strong>
+                    <span>课后作业完成人数</span>
+                  </div>
+                  <div class="stat">
+                    <img src="https://www.figma.com/api/mcp/asset/d81f6b09-a0e8-430b-9a35-a98a263e8fe4" alt="" />
+                    <strong>1h 35min</strong>
+                    <span>今日平均在线时长</span>
+                  </div>
+                </div>
+              </section>
+
+              <section class="card word-card">
+                <h2>AI对话关键词检索</h2>
+                <div class="word-cloud">
+                  <span class="word big w1">氧气</span>
+                  <span class="word bigger w2">植物</span>
+                  <span class="word big w3">光线的变化</span>
+                  <span class="word main w4">昆虫</span>
+                  <span class="word w5">燃烧</span>
+                  <span class="word w6">云</span>
+                  <span class="word w7">颜色</span>
+                  <span class="word small w8">雨</span>
+                  <span class="word small w9">雪</span>
+                  <span class="word small w10">青蛙</span>
+                  <span class="word small w11">漂浮</span>
+                  <span class="word small w12">水从哪里来</span>
+                </div>
+              </section>
+
+              <aside class="right-stack">
+                <section class="card welcome-card">
+                  <div>
+                    <h2>欢迎使用</h2>
+                    <p>优质教师端后台</p>
+                    <button>查看使用手册</button>
+                  </div>
+                  <img src="https://www.figma.com/api/mcp/asset/78434065-03dd-44f4-879b-0b697023b0a7" alt="" />
+                </section>
+                <section class="card star-card">
+                  <div class="card-title-row"><h2>本周学习之星</h2><a>查看更多</a></div>
+                  <div class="students">
+                    <figure><img src="https://www.figma.com/api/mcp/asset/8a94105b-91a6-400a-a6f1-6c0be655ece2" alt="" /><figcaption>刘舒涵</figcaption></figure>
+                    <figure><img src="https://www.figma.com/api/mcp/asset/08e55b10-d32f-45b4-ad0c-b6f4e4cdd1cf" alt="" /><figcaption>王思远</figcaption></figure>
+                    <figure><img src="https://www.figma.com/api/mcp/asset/9d80fbcc-b3bd-4549-b9ac-63ecf86178eb" alt="" /><figcaption>李玉华</figcaption></figure>
+                    <figure><img src="https://www.figma.com/api/mcp/asset/e91d5e51-a49a-4c6c-9480-b64a80816d18" alt="" /><figcaption>陈俊超</figcaption></figure>
+                  </div>
+                </section>
+                <section class="card notice-card">
+                  <div class="card-title-row"><h2>消息通知</h2><a>查看更多</a></div>
+                  <p>9.1　关于国庆节放假通知</p>
+                  <p>9.10　关于教师节放假通知</p>
+                  <p>10.3　关于运动会通知</p>
+                  <p>11.8　注意！本周有校外领导巡视</p>
+                  <p>12.30　关于元旦放假通知</p>
+                </section>
+              </aside>
+            </div>
+          </div>
+
+          <div class="screen" id="question-empty" data-frame="48">
+            <div class="question-layout">
+              <section class="panel question-form">
+                <div class="tabs"><button class="selected">知识点出题</button><button>文本出题</button><button>附件出题</button></div>
+                <div class="form-section-title"><img src="https://www.figma.com/api/mcp/asset/dfa5f676-a8b6-4ad0-a62f-004bc4631a5c" alt="" />章节选择</div>
+                <div class="select-row"><button>请选择单元<span class="field-chevron"><img src="https://www.figma.com/api/mcp/asset/06eb880f-6904-49a0-afd9-c9938f171619" alt="" /></span></button><button>请选择章节<span class="field-chevron"><img src="https://www.figma.com/api/mcp/asset/06eb880f-6904-49a0-afd9-c9938f171619" alt="" /></span></button></div>
+                <div class="prompt-box">
+                  <strong>补充内容 <small>（选填）</small></strong>
+                  <p>您可以补充特殊的出题要求<br />示例如下：<br />题目中要求包含“折射”，“反射”这两个词汇<br />体感紫薯仔50-80之间</p>
+                </div>
+                <div class="form-section-title"><img src="https://www.figma.com/api/mcp/asset/088d62b6-ec86-49d4-9862-68abca538cf8" alt="" />出题设置</div>
+                <div class="select-row"><button>单选题 填空题 判断...<span class="field-chevron"><img src="https://www.figma.com/api/mcp/asset/06eb880f-6904-49a0-afd9-c9938f171619" alt="" /></span></button><button>请选择难度<span class="field-chevron"><img src="https://www.figma.com/api/mcp/asset/06eb880f-6904-49a0-afd9-c9938f171619" alt="" /></span></button></div>
+                <div class="select-row"><button>请选择知识点<span class="field-chevron"><img src="https://www.figma.com/api/mcp/asset/06eb880f-6904-49a0-afd9-c9938f171619" alt="" /></span></button><button>选择出题方向<span class="field-chevron"><img src="https://www.figma.com/api/mcp/asset/06eb880f-6904-49a0-afd9-c9938f171619" alt="" /></span></button></div>
+                <button class="primary-pill" data-screen-target="question-result"><img src="https://www.figma.com/api/mcp/asset/9985435a-0305-4842-985e-f5912873160f" alt="" />立即出题</button>
+                <p class="hint">内容由AI生成，仅供参考</p>
+              </section>
+              <section class="panel empty-result">
+                <img src="https://www.figma.com/api/mcp/asset/15a22f24-414b-44b9-a913-37de5abc83e3" alt="" />
+                <h2>出题指南</h2>
+                <p>1.选择出题方式，填好必要的信息<br />2.系统将自动保存您的出题设置<br />3. 点击“立即出题”，题目结果将显示在右侧</p>
+              </section>
+            </div>
+          </div>
+
+          <div class="screen" id="question-result" data-frame="121">
+            <div class="question-layout">
+              <section class="panel question-form">
+                <div class="tabs"><button class="selected">知识点出题</button><button>文本出题</button><button>附件出题</button></div>
+                <div class="form-section-title"><img src="https://www.figma.com/api/mcp/asset/dfa5f676-a8b6-4ad0-a62f-004bc4631a5c" alt="" />章节选择</div>
+                <div class="select-row"><button>第一单元<span class="field-chevron"><img src="https://www.figma.com/api/mcp/asset/06eb880f-6904-49a0-afd9-c9938f171619" alt="" /></span></button><button>第一章节<span class="field-chevron"><img src="https://www.figma.com/api/mcp/asset/06eb880f-6904-49a0-afd9-c9938f171619" alt="" /></span></button></div>
+                <div class="prompt-box compact">
+                  <strong>补充内容 <small>（选填）</small></strong>
+                  <p>您可以补充特殊的出题要求</p>
+                </div>
+                <div class="form-section-title"><img src="https://www.figma.com/api/mcp/asset/088d62b6-ec86-49d4-9862-68abca538cf8" alt="" />出题设置</div>
+                <div class="select-row"><button>单选题<span class="field-chevron"><img src="https://www.figma.com/api/mcp/asset/06eb880f-6904-49a0-afd9-c9938f171619" alt="" /></span></button><button>简单<span class="field-chevron"><img src="https://www.figma.com/api/mcp/asset/06eb880f-6904-49a0-afd9-c9938f171619" alt="" /></span></button></div>
+                <div class="select-row"><button>为什么会生锈<span class="field-chevron"><img src="https://www.figma.com/api/mcp/asset/06eb880f-6904-49a0-afd9-c9938f171619" alt="" /></span></button><button>课前预习<span class="field-chevron"><img src="https://www.figma.com/api/mcp/asset/06eb880f-6904-49a0-afd9-c9938f171619" alt="" /></span></button></div>
+                <button class="primary-pill"><img src="https://www.figma.com/api/mcp/asset/9985435a-0305-4842-985e-f5912873160f" alt="" />立即出题</button>
+                <p class="hint">内容由AI生成，仅供参考</p>
+              </section>
+              <section class="panel generated-result">
+                <img src="https://www.figma.com/api/mcp/asset/73e8055a-da45-4d2e-b8fe-5929d91676c5" alt="" />
+                <div class="question-copy">
+                  <p>（已生成5题）</p>
+                  <h2>1.下列哪个条件最能加速铁制品的生锈?</h2>
+                  <p>A.在干燥的沙漠中</p>
+                  <p>B.在真空密封得包装里</p>
+                  <p>C.在潮湿的海边</p>
+                  <p>D.涂上润滑油</p>
+                </div>
+                <button class="publish-btn" data-screen-target="teaching">立即发布</button>
+              </section>
+            </div>
+          </div>
+
+          <div class="screen" id="teaching" data-frame="75">
+            <div class="teaching-actions">
+              <button class="solid">查看预习结果</button>
+              <button data-screen-target="publish-preview">发布预习作业</button>
+            </div>
+            <section class="teaching-card">
+              <div class="filters">
+                <span>状态</span><label><input type="radio" checked /> 全部</label><label><input type="radio" /> 未开始</label><label><input type="radio" /> 进行中</label><label><input type="radio" /> 已结束</label>
+              </div>
+              <div class="assignment-list">
+                <article><h2>蜡烛的燃烧</h2><p>六年级1班</p><p>作答时间：09-20 16:00 至 9-21 14:00</p><strong>40</strong><span>待批阅</span><span>40 已交</span><span>0 未交</span><button>查看</button></article>
+                <article><h2>生锈与防锈</h2><p>六年级1班</p><p>作答时间：09-20 16:00 至 9-21 14:00</p><strong>6</strong><span>待批阅</span><span>12 已交</span><span>32 未交</span><button>查看</button></article>
+                <article><h2>颜色的变化</h2><p>六年级1班</p><p>作答时间：09-20 16:00 至 9-21 14:00</p><strong>0</strong><span>待批阅</span><span>40 已交</span><span>0 未交</span><button data-screen-target="preview-detail">查看</button></article>
+                <article><h2>田野里的生物</h2><p>六年级1班</p><p>作答时间：09-20 16:00 至 9-21 14:00</p><strong>6</strong><span>待批阅</span><span>12 已交</span><span>32 未交</span><button>查看</button></article>
+                <article><h2>天气的成因</h2><p>六年级1班</p><p>作答时间：09-20 16:00 至 9-21 14:00</p><strong>6</strong><span>待批阅</span><span>12 已交</span><span>32 未交</span><button>查看</button></article>
+                <article><h2>植物乐园</h2><p>六年级1班</p><p>作答时间：09-20 16:00 至 9-21 14:00</p><strong>6</strong><span>待批阅</span><span>12 已交</span><span>32 未交</span><button>查看</button></article>
+              </div>
+            </section>
+          </div>
+
+          <div class="screen detail-screen" id="preview-detail" data-frame="110">
+            <div class="detail-header">
+              <button class="back-chip" data-screen-target="teaching"><img src="https://www.figma.com/api/mcp/asset/0266e003-5611-4f0f-bbdd-e86c4e238f07" alt="" />返回</button>
+              <div class="status-filter">
+                <strong>颜色的变化</strong>
+                <span>状态</span><label><img src="https://www.figma.com/api/mcp/asset/6afd32c8-1744-4345-b937-aea1bc8fd770" alt="" /> 全部</label><label><img src="https://www.figma.com/api/mcp/asset/f1480a44-c25e-41e3-96d5-aed8fce73000" alt="" /> 未开始</label><label><img src="https://www.figma.com/api/mcp/asset/f1480a44-c25e-41e3-96d5-aed8fce73000" alt="" /> 进行中</label><label><img src="https://www.figma.com/api/mcp/asset/f1480a44-c25e-41e3-96d5-aed8fce73000" alt="" /> 已完成</label>
+              </div>
+            </div>
+            <section class="metric-card source-metrics">
+              <div class="source-gauge">
+                <img class="gauge-base-img" src="https://www.figma.com/api/mcp/asset/3a224bba-55c0-4712-8c27-1d4d5ed6de4a" alt="" />
+                <img class="gauge-progress-img purple-progress" src="https://www.figma.com/api/mcp/asset/b07c9475-4079-4a54-9d67-ac793dff358b" alt="" />
+                <b>60%</b><span>平均进度</span>
+              </div>
+              <div class="source-gauge">
+                <img class="gauge-base-img" src="https://www.figma.com/api/mcp/asset/3a224bba-55c0-4712-8c27-1d4d5ed6de4a" alt="" />
+                <img class="gauge-progress-img blue-progress" src="https://www.figma.com/api/mcp/asset/81bb39f5-67b8-494b-b21e-284f3959d854" alt="" />
+                <b>22分钟</b><span>平均用时</span>
+              </div>
+              <div class="source-gauge">
+                <img class="gauge-base-img" src="https://www.figma.com/api/mcp/asset/3a224bba-55c0-4712-8c27-1d4d5ed6de4a" alt="" />
+                <img class="gauge-progress-img green-progress" src="https://www.figma.com/api/mcp/asset/65afaa03-1c2a-4332-9b91-9237f749ddf2" alt="" />
+                <b>80%</b><span>平均正确率</span>
+              </div>
+            </section>
+            <section class="result-table">
+              <div class="row head"><span>同学</span><span>进度</span><span>用时</span><span>正确率</span><span>AI批阅状态</span><span>操作</span></div>
+              <div class="row"><span>同学1</span><span>100%</span><span>19分29秒</span><span>90%</span><span>已批阅</span><button>复核</button></div>
+              <div class="row tint"><span>同学2</span><span>60%</span><span>20分29秒</span><span>88%</span><span>已批阅</span><button>复核</button></div>
+              <div class="row"><span>同学3</span><span>49%</span><span>20分29秒</span><span>90%</span><span>已批阅</span><button>复核</button></div>
+              <div class="row tint"><span>同学4</span><span>49%</span><span>20分29秒</span><span>89%</span><span>已批阅</span><button>复核</button></div>
+              <div class="row"><span>同学5</span><span>49%</span><span>20分29秒</span><span>84%</span><span>已批阅</span><button>复核</button></div>
+              <div class="row tint"><span>同学6</span><span>47%</span><span>20分29秒</span><span>88%</span><span>已批阅</span><button>复核</button></div>
+            </section>
+          </div>
+
+          <div class="screen publish-screen" id="publish-preview" data-frame="105">
+            <div class="teaching-actions publish-tabs">
+              <button data-screen-target="teaching">查看预习结果</button>
+              <button class="solid">发布预习作业</button>
+            </div>
+            <section class="publish-settings">
+              <h2>新建作业202509191234</h2>
+              <div class="settings-line">
+                <strong>作业类型</strong><label><input type="radio" checked /> 题目类型作业</label><label><input type="radio" /> 答题卡作业</label>
+                <strong>评分机制</strong><label><input type="radio" checked /> 百分制</label><label><input type="radio" /> 自定义</label>
+                <strong>题型设置</strong><label><input type="radio" checked /> 按题型归类</label><label><input type="radio" /> 不按题型归类</label>
+              </div>
+            </section>
+            <div class="publish-layout">
+              <aside class="homework-outline">
+                <p>总分100</p>
+                <b>1 预习要求</b>
+                <span>观看第一单元第一节视频内容，并完成章节测验</span>
+                <b>2 单选题</b>
+                <span class="selected">3 将红色颜料和黄色颜料混合在一起会获得...</span>
+              </aside>
+              <section class="question-bank">
+                <div class="bank-filters">
+                  <p><strong>题目：</strong><em>全部</em> 单选题 多选题 填空题 判断题 简答题</p>
+                  <p><strong>年级：</strong><em>不限</em> 一年级 二年级 三年级 四年级 五年级 六年级</p>
+                  <p><strong>章节：</strong><em>全部</em> 第一章 第二章 第三章 第四章 第五章</p>
+                </div>
+                <div class="bank-title"><h2>AI题库</h2><div class="search">请输入关键词</div></div>
+                <div class="question-cards compact-preview-cards">
+                  <article class="selected"><span class="source-badge">1</span><h3>小电动机(马达)工作时，主要的能量转换过程是()。</h3><p>【工具与机械】</p><small>标签：人教版 六年级上册 能量 能量转换<br />第三套:人教版(人民教育出版社)</small></article>
+                  <article><span class="empty-mark"></span><h3>下列动物中，与羊的亲缘关系最近的是()。</h3><p>【生物多样性】</p><small>标签：人教版 六年级下册 生物分类 血缘关系<br />第二套:人教版(人民教育出版社)</small></article>
+                  <article><span class="empty-mark"></span><h3>仙人掌的叶退化成刺，主要是为了适应()。</h3><p>【生物与栖息地】</p><small>标签：苏教版 六年级上册 生物 适应环境<br />第二套:苏教版(江苏教育出版社)</small></article>
+                  <article class="selected"><span class="source-badge">2</span><h3>地球的内部结构从外到内依次是()。</h3><p>【地球构造】</p><small>标签：苏教版 六年级上册 地球科学 地球内部结构<br />苏教版(江苏教育出版社)</small></article>
+                  <article><span class="empty-mark"></span><h3>我们使用的自来水，经过了一系列的净化处理。下列方法中，不属于自来水厂净化流程的是()。</h3><p>【技术与生活】</p><small>标签：苏教版 六年级上册 生物 适应环境<br />第二套:苏教版(江苏教育出版社)</small></article>
+                  <article><span class="empty-mark"></span><h3>下列生物中，属于生产者的是()。</h3><p>【生物与环境】</p><small>标签：教科版 六年级上册 生物 生态系统生产者<br />第一套:教科版(教育科学出版社)</small></article>
+                </div>
+                <div class="publish-footer"><button class="solid">保存</button><button>立即发布</button></div>
+              </section>
+            </div>
+          </div>
+
+          <div class="screen experiment-screen" id="class-experiment" data-frame="57">
+            <div class="teaching-actions publish-tabs">
+              <button class="solid">查看实验情况</button>
+              <button data-screen-target="quiz-results">查看随堂测试结果</button>
+            </div>
+            <section class="experiment-panel">
+              <div class="video-placeholder"></div>
+              <div class="experiment-students">
+                <figure><img src="https://www.figma.com/api/mcp/asset/fe9ed15d-ea59-4c38-9102-ba9babe832bb" alt="" /><figcaption>未开始</figcaption></figure>
+                <figure><img src="https://www.figma.com/api/mcp/asset/def5be60-8042-4382-9bf0-9775016e82d7" alt="" /><figcaption>未开始</figcaption></figure>
+                <figure class="active"><img src="https://www.figma.com/api/mcp/asset/8409e63d-edec-466d-84c9-288882fdf092" alt="" /><figcaption>进行中</figcaption></figure>
+                <figure><img src="https://www.figma.com/api/mcp/asset/a1c610c5-13da-429d-a094-78eba8adbbde" alt="" /><figcaption>进行中</figcaption></figure>
+                <figure><img src="https://www.figma.com/api/mcp/asset/529ff23f-2a7b-4a35-9b00-ba848905adb1" alt="" /><figcaption>已结束</figcaption></figure>
+              </div>
+            </section>
+          </div>
+
+          <div class="screen quiz-results-screen" id="quiz-results" data-frame="116">
+            <div class="teaching-actions publish-tabs">
+              <button data-screen-target="teaching">查看预习结果</button>
+              <button data-screen-target="publish-quiz">发布随堂测验</button>
+              <button class="solid">查看随堂测试结果</button>
+            </div>
+            <section class="lesson-list-panel">
+              <div class="lesson-list">
+                <article><h2>蜡烛的燃烧</h2><p>六年级1班</p><p>作答时间：09-20 16:00 至 9-21 14:00</p><span>32 已交</span><span>8 未交</span><button>查看</button></article>
+                <article><h2>生锈与防锈</h2><p>六年级1班</p><p>作答时间：09-20 16:00 至 9-21 14:00</p><span>40 已交</span><span>0 未交</span><button>查看</button></article>
+                <article><h2>自然资源</h2><p>六年级1班</p><p>作答时间：09-20 16:00 至 9-21 14:00</p><span>36 已交</span><span>4 未交</span><button data-screen-target="quiz-detail">查看</button></article>
+                <article><h2>田野里的生物</h2><p>六年级1班</p><p>作答时间：09-20 16:00 至 9-21 14:00</p><span>32 已交</span><span>8 未交</span><button>查看</button></article>
+                <article><h2>天气的成因</h2><p>六年级1班</p><p>作答时间：09-20 16:00 至 9-21 14:00</p><span>38 已交</span><span>2 未交</span><button>查看</button></article>
+                <article><h2>植物乐园</h2><p>六年级1班</p><p>作答时间：09-20 16:00 至 9-21 14:00</p><span>34 已交</span><span>6 未交</span><button>查看</button></article>
+              </div>
+            </section>
+          </div>
+
+          <div class="screen publish-screen quiz-publish-screen" id="publish-quiz" data-frame="78">
+            <div class="teaching-actions publish-tabs">
+              <button data-screen-target="teaching">查看预习结果</button>
+              <button class="solid">发布随堂测验</button>
+              <button data-screen-target="quiz-results">查看随堂测试结果</button>
+            </div>
+            <section class="publish-settings">
+              <h2>新建作业202509191234</h2>
+              <div class="settings-line">
+                <strong>作业类型</strong><label><input type="radio" checked /> 题目类型作业</label><label><input type="radio" /> 答题卡作业</label>
+                <strong>评分机制</strong><label><input type="radio" checked /> 百分制</label><label><input type="radio" /> 自定义</label>
+                <strong>题型设置</strong><label><input type="radio" checked /> 按题型归类</label><label><input type="radio" /> 不按题型归类</label>
+              </div>
+            </section>
+            <div class="publish-layout">
+              <aside class="homework-outline">
+                <p>总分100</p>
+                <b>1 单选题</b>
+                <span>将红色颜料和黄色颜料混合在一起会获得...</span>
+                <b class="selected">2</b>
+              </aside>
+              <section class="question-bank">
+                <div class="bank-filters">
+                  <p><strong>题目：</strong><em>全部</em> 单选题 多选题 填空题 判断题 简答题</p>
+                  <p><strong>年级：</strong><em>不限</em> 一年级 二年级 三年级 四年级 五年级 六年级</p>
+                  <p><strong>章节：</strong><em>全部</em> 第一章 第二章 第三章 第四章 第五章 第一节 第二节 第三节 章节总结</p>
+                </div>
+                <div class="bank-title"><h2>AI题库</h2><div class="search">请输入关键词</div></div>
+                <div class="question-cards compact-preview-cards">
+                  <article class="selected"><span class="source-badge">1</span><h3>小电动机(马达)工作时，主要的能量转换过程是()。</h3><p>【工具与机械】</p><small>标签：人教版 六年级上册 能量 能量转换<br />第二套:人教版(人民教育出版社)</small></article>
+                  <article><span class="empty-mark"></span><h3>下列动物中，与羊的亲缘关系最近的是()。</h3><p>【生物多样性】</p><small>标签：人教版 六年级下册 生物分类 血缘关系<br />第二套:人教版(人民教育出版社)</small></article>
+                  <article><span class="empty-mark"></span><h3>仙人掌的叶退化成刺，主要是为了适应()。</h3><p>【生物与栖息地】</p><small>标签：苏教版 六年级上册 生物 适应环境<br />第二套:苏教版(江苏教育出版社)</small></article>
+                  <article class="selected"><span class="source-badge">2</span><h3>地球的内部结构从外到内依次是()。</h3><p>【地球构造】</p><small>标签：苏教版 六年级上册 地球科学 地球内部结构<br />苏教版(江苏教育出版社)</small></article>
+                  <article><span class="empty-mark"></span><h3>我们使用的自来水，经过了一系列的净化处理。下列方法中，不属于自来水厂净化流程的是()。</h3><p>【技术与生活】</p><small>标签：苏教版 六年级上册 生物 适应环境<br />第二套:苏教版(江苏教育出版社)</small></article>
+                  <article><span class="empty-mark"></span><h3>下列生物中，属于生产者的是()。</h3><p>【生物与环境】</p><small>标签：教科版 六年级上册 生物 生态系统生产者<br />第一套:教科版(教育科学出版社)</small></article>
+                </div>
+                <div class="publish-footer"><button class="solid">保存</button><button data-screen-target="quiz-results">立即发布</button></div>
+              </section>
+            </div>
+          </div>
+
+          <div class="screen quiz-detail-screen" id="quiz-detail" data-frame="117">
+            <div class="detail-header quiz-detail-header">
+              <button class="back-chip" data-screen-target="quiz-results"><img src="https://www.figma.com/api/mcp/asset/d629b9de-68b9-496a-a587-12d9dfb809b0" alt="" />返回</button>
+              <strong>自然资源</strong>
+            </div>
+            <section class="quiz-card-grid natural-chart-grid">
+              <article><h2>1. 下列属于可再生资源的是？</h2><div class="source-bar-chart q1"><div class="chart-options"><span>A. 太阳能计算器</span><span>B. 田野里的大风车</span><span>C. 烧煤的发电厂</span><span>D. 手摇式手电筒</span></div><img class="chart-axis" src="https://www.figma.com/api/mcp/asset/b76578a1-f98b-4bab-9108-03382c848777" alt="" /><img class="bar b1" src="https://www.figma.com/api/mcp/asset/70c51f8d-e27c-41d5-93ec-0824b4ef7611" alt="" /><img class="bar b2" src="https://www.figma.com/api/mcp/asset/a97741a5-05e2-4711-ab7e-b82ea4cdf288" alt="" /><img class="bar b4" src="https://www.figma.com/api/mcp/asset/3f717cf1-9b41-4ce3-ba2e-76b9c73dec3f" alt="" /><span class="count c1">5人</span><span class="count c2">30人</span><span class="count c3">0人</span><span class="count c4">5人</span><span class="axis-label l1">A</span><span class="axis-label l2">B</span><span class="axis-label l3">C</span><span class="axis-label l4">D</span></div></article>
+              <article><h2>2. 煤炭、石油属于哪类资源？</h2><div class="source-bar-chart q2"><div class="chart-options"><span>A. 太阳能、风能、煤炭</span><span>C. 煤炭、水能、塑料</span><span>B. 树木、石油、天然气</span><span>D. 土壤、岩石、矿产</span></div><img class="chart-axis" src="https://www.figma.com/api/mcp/asset/b76578a1-f98b-4bab-9108-03382c848777" alt="" /><img class="bar b1" src="https://www.figma.com/api/mcp/asset/454b4eca-0483-4244-a955-105fb7774f87" alt="" /><img class="bar b2" src="https://www.figma.com/api/mcp/asset/c0eca282-b841-4c50-82d7-c8f7cc4fd2bf" alt="" /><img class="bar b3" src="https://www.figma.com/api/mcp/asset/3f4f39b5-c7cb-4579-83be-d333e49f7599" alt="" /><img class="bar b4" src="https://www.figma.com/api/mcp/asset/7b8c6e49-4f50-4013-8eb3-69b161ace85b" alt="" /><span class="count c1">10人</span><span class="count c2">20人</span><span class="count c3">5人</span><span class="count c4">5人</span><span class="axis-label l1">A</span><span class="axis-label l2">B</span><span class="axis-label l3">C</span><span class="axis-label l4">D</span></div></article>
+              <article><h2>3. 节约用水的正确做法是？</h2><div class="source-bar-chart q3"><div class="chart-options"><span>A. 风能</span><span>B. 水能</span><span>C. 煤炭</span><span>D. 地热能</span></div><img class="chart-axis" src="https://www.figma.com/api/mcp/asset/b76578a1-f98b-4bab-9108-03382c848777" alt="" /><img class="bar b1" src="https://www.figma.com/api/mcp/asset/32ee3115-fb25-4474-94e4-1d56b7b7d3c2" alt="" /><img class="bar b2" src="https://www.figma.com/api/mcp/asset/0615068d-4127-4d68-9e17-a8c6690b7fb7" alt="" /><img class="bar b3" src="https://www.figma.com/api/mcp/asset/c48ad6f1-b63a-46bd-9ea6-a9c38f1f4161" alt="" /><img class="bar b4" src="https://www.figma.com/api/mcp/asset/3449bba3-dfc0-404a-9bb9-7781809e7d8e" alt="" /><span class="count c1">8人</span><span class="count c2">5人</span><span class="count c3">12人</span><span class="count c4">5人</span><span class="axis-label l1">A</span><span class="axis-label l2">B</span><span class="axis-label l3">C</span><span class="axis-label l4">D</span></div></article>
+              <article><h2>4. 森林资源的主要作用是？</h2><div class="source-bar-chart q4"><div class="chart-options"><span>A. 让地球上植物茂盛，围绕太阳</span><span>B. 形成适宜生物的一年四季变化</span><span>C. 是植物生长的基础，为我们提供食物</span><span>D. 是一种取之不尽用之不竭的资源</span></div><img class="chart-axis" src="https://www.figma.com/api/mcp/asset/b76578a1-f98b-4bab-9108-03382c848777" alt="" /><img class="bar b1" src="https://www.figma.com/api/mcp/asset/70c51f8d-e27c-41d5-93ec-0824b4ef7611" alt="" /><img class="bar b2" src="https://www.figma.com/api/mcp/asset/e5f4591b-c44e-4b19-a42c-24b3b3d9ec6f" alt="" /><img class="bar b3" src="https://www.figma.com/api/mcp/asset/fc685b67-c587-4cbb-8ed5-486bbc760f7a" alt="" /><img class="bar b4" src="https://www.figma.com/api/mcp/asset/f9e4b733-1274-4014-b2c9-50c8bcbb2a8c" alt="" /><span class="count c1">5人</span><span class="count c2">15人</span><span class="count c3">10人</span><span class="count c4">10人</span><span class="axis-label l1">A</span><span class="axis-label l2">B</span><span class="axis-label l3">C</span><span class="axis-label l4">D</span></div></article>
+              <article><h2>5. 下列行为有利于保护资源的是？</h2><div class="source-bar-chart q5"><div class="chart-options"><span>A. 风能</span><span>B. 太阳能</span><span>C. 石油</span><span>D. 天然气</span></div><img class="chart-axis" src="https://www.figma.com/api/mcp/asset/b76578a1-f98b-4bab-9108-03382c848777" alt="" /><img class="bar b1" src="https://www.figma.com/api/mcp/asset/70c51f8d-e27c-41d5-93ec-0824b4ef7611" alt="" /><img class="bar b2" src="https://www.figma.com/api/mcp/asset/69be51d7-9588-47a5-9b5d-7348b8252242" alt="" /><img class="bar b3" src="https://www.figma.com/api/mcp/asset/4a631458-0a82-40f3-b6b0-5a98b4d475b5" alt="" /><img class="bar b4" src="https://www.figma.com/api/mcp/asset/f9e4b733-1274-4014-b2c9-50c8bcbb2a8c" alt="" /><span class="count c1">5人</span><span class="count c2">20人</span><span class="count c3">5人</span><span class="count c4">10人</span><span class="axis-label l1">A</span><span class="axis-label l2">B</span><span class="axis-label l3">C</span><span class="axis-label l4">D</span></div></article>
+              <article><h2>6. 土地资源被破坏后应如何处理？</h2><div class="source-bar-chart q6"><div class="chart-options"><span>A. 水的势能</span><span>B. 空气流动的动能</span><span>C. 太阳的光能</span><span>D. 地球内部的热能</span></div><img class="chart-axis" src="https://www.figma.com/api/mcp/asset/b76578a1-f98b-4bab-9108-03382c848777" alt="" /><img class="bar b1" src="https://www.figma.com/api/mcp/asset/70c51f8d-e27c-41d5-93ec-0824b4ef7611" alt="" /><img class="bar b2" src="https://www.figma.com/api/mcp/asset/e5f4591b-c44e-4b19-a42c-24b3b3d9ec6f" alt="" /><img class="bar b3" src="https://www.figma.com/api/mcp/asset/fc685b67-c587-4cbb-8ed5-486bbc760f7a" alt="" /><img class="bar b4" src="https://www.figma.com/api/mcp/asset/f9e4b733-1274-4014-b2c9-50c8bcbb2a8c" alt="" /><span class="count c1">5人</span><span class="count c2">15人</span><span class="count c3">10人</span><span class="count c4">10人</span><span class="axis-label l1">A</span><span class="axis-label l2">B</span><span class="axis-label l3">C</span><span class="axis-label l4">D</span></div></article>
+            </section>
+          </div>
+
+          <div class="screen after-class-screen" id="after-class-homework" data-frame="76">
+            <div class="teaching-actions publish-tabs">
+              <button class="solid">查看课后作业</button>
+              <button data-screen-target="after-homework-publish-empty">发布课后作业</button>
+            </div>
+            <section class="lesson-list-panel">
+              <div class="lesson-list">
+                <article><h2>蜡烛的燃烧</h2><p>六年级1班</p><p>作答时间：09-20 16:00 至 9-21 14:00</p><span>32 已交</span><span>8 未交</span><button>查看</button></article>
+                <article><h2>生锈与防锈</h2><p>六年级1班</p><p>作答时间：09-20 16:00 至 9-21 14:00</p><span>10 已交</span><span>30 未交</span><button>查看</button></article>
+                <article><h2>颜色的变化</h2><p>六年级1班</p><p>作答时间：09-20 16:00 至 9-21 14:00</p><span>14 已交</span><span>26 未交</span><button data-screen-target="after-homework-detail">查看</button></article>
+                <article><h2>田野里的生物</h2><p>六年级1班</p><p>作答时间：09-20 16:00 至 9-21 14:00</p><span>12 已交</span><span>28 未交</span><button>查看</button></article>
+                <article><h2>天气的成因</h2><p>六年级1班</p><p>作答时间：09-20 16:00 至 9-21 14:00</p><span>18 已交</span><span>22 未交</span><button>查看</button></article>
+                <article><h2>植物乐园</h2><p>六年级1班</p><p>作答时间：09-20 16:00 至 9-21 14:00</p><span>16 已交</span><span>24 未交</span><button>查看</button></article>
+              </div>
+            </section>
+          </div>
+
+          <div class="screen after-publish-screen" id="after-homework-publish-empty" data-frame="114">
+            <div class="teaching-actions publish-tabs">
+              <button data-screen-target="after-class-homework">查看课后作业</button>
+              <button class="solid">发布课后作业</button>
+            </div>
+            <section class="after-settings-card">
+              <h2>新建作业202509191234</h2>
+              <div class="after-settings-row">
+                <strong>作业类型</strong><span><img src="https://www.figma.com/api/mcp/asset/6a1087cf-dabf-4ba6-9225-03bb8f1db27d" alt="" />题目类型作业</span><span><img src="https://www.figma.com/api/mcp/asset/fc3a4fca-2dff-481f-ad1a-a3398c8ca75c" alt="" />答题卡作业</span>
+                <strong>评分机制</strong><span><img src="https://www.figma.com/api/mcp/asset/6a1087cf-dabf-4ba6-9225-03bb8f1db27d" alt="" />百分制</span><span><img src="https://www.figma.com/api/mcp/asset/fc3a4fca-2dff-481f-ad1a-a3398c8ca75c" alt="" />自定义</span>
+                <strong>题型设置</strong><span><img src="https://www.figma.com/api/mcp/asset/6a1087cf-dabf-4ba6-9225-03bb8f1db27d" alt="" />按题型归类</span><span><img src="https://www.figma.com/api/mcp/asset/fc3a4fca-2dff-481f-ad1a-a3398c8ca75c" alt="" />不按题型归类</span>
+              </div>
+            </section>
+            <div class="after-publish-layout">
+              <aside class="after-outline">
+                <p>总分100</p>
+                <b class="active">1</b>
+              </aside>
+              <section class="after-bank-area">
+                <div class="after-filter-card">
+                  <p><strong>题目：</strong><em>全部</em><span>单选题</span><span>多选题</span><span>填空题</span><span>判断题</span><span>简答题</span></p>
+                  <p><strong>年级：</strong><em>不限</em><span>一年级</span><span>二年级</span><span>三年级</span><span>四年级</span><span>五年级</span><span>六年级</span></p>
+                  <p><strong>章节：</strong><em>全部</em><span>第一章</span><span>第二章</span><span>第三章</span><span>第四章</span><span>第五章</span><span>第一节</span><span>第二节</span><span>第三节</span><span>章节总结</span></p>
+                </div>
+                <div class="after-bank-title"><h2>AI题库</h2><div class="after-search"><img src="https://www.figma.com/api/mcp/asset/9b41c060-279a-480f-a9d1-dd3593a26e6e" alt="" />请输入关键词</div></div>
+                <div class="after-question-cards">
+                  <button class="after-question-card" data-screen-target="after-homework-publish-selected"><img class="select-mark" src="https://www.figma.com/api/mcp/asset/fc3a4fca-2dff-481f-ad1a-a3398c8ca75c" alt="" /><h3>红光和绿光混合在一起会变成()。</h3><p>【光的颜色】</p><small>标签：人教版 六年级上册 光线的变化 颜色</small></button>
+                  <button class="after-question-card" data-screen-target="after-homework-publish-selected"><img class="select-mark" src="https://www.figma.com/api/mcp/asset/fc3a4fca-2dff-481f-ad1a-a3398c8ca75c" alt="" /><h3>下列动物中，与羊的亲缘关系最近的是()。</h3><p>【生物多样性】</p><small>标签：人教版 六年级下册 生物分类</small></button>
+                  <button class="after-question-card" data-screen-target="after-homework-publish-selected"><img class="select-mark" src="https://www.figma.com/api/mcp/asset/fc3a4fca-2dff-481f-ad1a-a3398c8ca75c" alt="" /><h3>仙人掌的叶退化成刺，主要是为了适应()。</h3><p>【生物与栖息地】</p><small>标签：苏教版 六年级上册 生物 适应环境</small></button>
+                  <button class="after-question-card" data-screen-target="after-homework-publish-selected"><img class="select-mark" src="https://www.figma.com/api/mcp/asset/fc3a4fca-2dff-481f-ad1a-a3398c8ca75c" alt="" /><h3>下列哪种情况属于光的色散现象（   ）</h3><p>【光与色彩】</p><small>标签：人教版 六年级上册 光线的变化</small></button>
+                  <button class="after-question-card" data-screen-target="after-homework-publish-selected"><img class="select-mark" src="https://www.figma.com/api/mcp/asset/fc3a4fca-2dff-481f-ad1a-a3398c8ca75c" alt="" /><h3>我们使用的自来水，哪项不属于自来水厂净化流程？</h3><p>【水的净化】</p><small>标签：六年级 科学 生活中的水</small></button>
+                  <button class="after-question-card" data-screen-target="after-homework-publish-selected"><img class="select-mark" src="https://www.figma.com/api/mcp/asset/fc3a4fca-2dff-481f-ad1a-a3398c8ca75c" alt="" /><h3>下列生物中，属于生产者的是()</h3><p>【生态系统】</p><small>标签：六年级 生物 生产者</small></button>
+                </div>
+                <div class="after-publish-footer"><button class="save">保存</button><button data-screen-target="after-class-homework">立即发布</button></div>
+              </section>
+            </div>
+          </div>
+
+          <div class="screen after-publish-screen" id="after-homework-publish-selected" data-frame="112">
+            <div class="teaching-actions publish-tabs">
+              <button data-screen-target="after-class-homework">查看课后作业</button>
+              <button class="solid">发布课后作业</button>
+            </div>
+            <section class="after-settings-card">
+              <h2>新建作业202509191234</h2>
+              <div class="after-settings-row">
+                <strong>作业类型</strong><span><img src="https://www.figma.com/api/mcp/asset/448bc41e-9ff5-44b5-b269-afd5ad6c4d23" alt="" />题目类型作业</span><span><img src="https://www.figma.com/api/mcp/asset/245d1f24-80df-46b9-b91e-dfad218f4408" alt="" />答题卡作业</span>
+                <strong>评分机制</strong><span><img src="https://www.figma.com/api/mcp/asset/448bc41e-9ff5-44b5-b269-afd5ad6c4d23" alt="" />百分制</span><span><img src="https://www.figma.com/api/mcp/asset/245d1f24-80df-46b9-b91e-dfad218f4408" alt="" />自定义</span>
+                <strong>题型设置</strong><span><img src="https://www.figma.com/api/mcp/asset/448bc41e-9ff5-44b5-b269-afd5ad6c4d23" alt="" />按题型归类</span><span><img src="https://www.figma.com/api/mcp/asset/245d1f24-80df-46b9-b91e-dfad218f4408" alt="" />不按题型归类</span>
+              </div>
+            </section>
+            <div class="after-publish-layout">
+              <aside class="after-outline">
+                <p>总分100</p>
+                <b>1 单选题</b><span>下列哪种情况属于光的色散现象（...）</span>
+                <b>2 单选题</b><span>红光和绿光混合在一起会变成（...）</span>
+                <b class="active">3</b>
+              </aside>
+              <section class="after-bank-area">
+                <div class="after-filter-card">
+                  <p><strong>题目：</strong><em>全部</em><span>单选题</span><span>多选题</span><span>填空题</span><span>判断题</span><span>简答题</span></p>
+                  <p><strong>年级：</strong><em>不限</em><span>一年级</span><span>二年级</span><span>三年级</span><span>四年级</span><span>五年级</span><span>六年级</span></p>
+                  <p><strong>章节：</strong><em>全部</em><span>第一章</span><span>第二章</span><span>第三章</span><span>第四章</span><span>第五章</span><span>第一节</span><span>第二节</span><span>第三节</span><span>章节总结</span></p>
+                </div>
+                <div class="after-bank-title"><h2>AI题库</h2><div class="after-search"><img src="https://www.figma.com/api/mcp/asset/5d16171d-ba01-409a-ab78-73bd051794f5" alt="" />请输入关键词</div></div>
+                <div class="after-question-cards">
+                  <button class="after-question-card selected"><img class="select-mark" src="https://www.figma.com/api/mcp/asset/448bc41e-9ff5-44b5-b269-afd5ad6c4d23" alt="" /><img class="card-badge" src="https://www.figma.com/api/mcp/asset/32af88db-a487-418e-8ae7-b304b9dc5306" alt="" /><h3>红光和绿光混合在一起会变成()。</h3><p>【光的颜色】</p><small>标签：人教版 六年级上册 光线的变化 颜色</small></button>
+                  <button class="after-question-card"><img class="select-mark" src="https://www.figma.com/api/mcp/asset/245d1f24-80df-46b9-b91e-dfad218f4408" alt="" /><h3>下列动物中，与羊的亲缘关系最近的是()。</h3><p>【生物多样性】</p><small>标签：人教版 六年级下册 生物分类</small></button>
+                  <button class="after-question-card"><img class="select-mark" src="https://www.figma.com/api/mcp/asset/245d1f24-80df-46b9-b91e-dfad218f4408" alt="" /><h3>仙人掌的叶退化成刺，主要是为了适应()。</h3><p>【生物与栖息地】</p><small>标签：苏教版 六年级上册 生物 适应环境</small></button>
+                  <button class="after-question-card selected"><img class="select-mark" src="https://www.figma.com/api/mcp/asset/448bc41e-9ff5-44b5-b269-afd5ad6c4d23" alt="" /><img class="card-badge second" src="https://www.figma.com/api/mcp/asset/32af88db-a487-418e-8ae7-b304b9dc5306" alt="" /><h3>下列哪种情况属于光的色散现象（   ）</h3><p>【光与色彩】</p><small>标签：人教版 六年级上册 光线的变化</small></button>
+                  <button class="after-question-card"><img class="select-mark" src="https://www.figma.com/api/mcp/asset/245d1f24-80df-46b9-b91e-dfad218f4408" alt="" /><h3>我们使用的自来水，哪项不属于自来水厂净化流程？</h3><p>【水的净化】</p><small>标签：六年级 科学 生活中的水</small></button>
+                  <button class="after-question-card"><img class="select-mark" src="https://www.figma.com/api/mcp/asset/245d1f24-80df-46b9-b91e-dfad218f4408" alt="" /><h3>下列生物中，属于生产者的是()</h3><p>【生态系统】</p><small>标签：六年级 生物 生产者</small></button>
+                </div>
+                <div class="after-publish-footer"><button class="save">保存</button><button data-screen-target="after-class-homework">立即发布</button></div>
+              </section>
+            </div>
+          </div>
+
+          <div class="screen quiz-detail-screen after-homework-detail-screen" id="after-homework-detail" data-frame="113">
+            <div class="detail-header quiz-detail-header">
+              <button class="back-chip" data-screen-target="after-class-homework"><img src="https://www.figma.com/api/mcp/asset/d629b9de-68b9-496a-a587-12d9dfb809b0" alt="" />返回</button>
+              <strong>颜色的变化</strong>
+            </div>
+            <section class="quiz-card-grid color-chart-grid">
+              <article><h2>下列哪种情况属于光的色散现象</h2><p class="question-options">A. 雨后出现的彩虹　B. 黑色衣服更吸热<br />C. 红色玻璃只让红光穿过　D. 用放大镜点燃纸片</p><div class="source-bar-chart color-q1"><div class="chart-options"><span>A. 雨后出现的彩虹</span><span>B. 黑色衣服更吸热</span><span>C. 红色玻璃只让红光穿过</span><span>D. 用放大镜点燃纸片</span></div><img class="chart-axis" src="https://www.figma.com/api/mcp/asset/dd191d32-89d3-4c90-a609-1b613c0643af" alt="" /><img class="bar b1" src="https://www.figma.com/api/mcp/asset/6df2d3a1-afd1-49e2-9ac1-09b964d95c58" alt="" /><img class="bar b2" src="https://www.figma.com/api/mcp/asset/7d1595b5-9bf5-4a56-86c2-3a37a2feed5b" alt="" /><img class="bar b3" src="https://www.figma.com/api/mcp/asset/7e1d7fd6-87d4-4947-8655-7e06f444530d" alt="" /><img class="bar b4" src="https://www.figma.com/api/mcp/asset/2acb68e9-b2f9-4864-b43b-9f9bc3323e38" alt="" /><span class="count c1">5人</span><span class="count c2">15人</span><span class="count c3">10人</span><span class="count c4">10人</span><span class="axis-label l1">A</span><span class="axis-label l2">B</span><span class="axis-label l3">C</span><span class="axis-label l4">D</span></div></article>
+              <article><h2>红光和绿光混合在一起会变成</h2><p class="question-options">A. 黄光　B. 蓝光<br />C. 紫光　D. 白光</p><div class="source-bar-chart color-q2"><div class="chart-options"><span>A. 黄光</span><span>B. 蓝光</span><span>C. 紫光</span><span>D. 白光</span></div><img class="chart-axis" src="https://www.figma.com/api/mcp/asset/dd191d32-89d3-4c90-a609-1b613c0643af" alt="" /><img class="bar b1" src="https://www.figma.com/api/mcp/asset/70e3c628-38d3-4db5-8320-06197c303be1" alt="" /><img class="bar b2" src="https://www.figma.com/api/mcp/asset/fbb546fa-2516-475d-a73d-b57f0c4c6413" alt="" /><img class="bar b3" src="https://www.figma.com/api/mcp/asset/ca4b6cd2-6e26-4e8f-9b1f-f1cf2a4571d8" alt="" /><img class="bar b4" src="https://www.figma.com/api/mcp/asset/69e5ae05-9c27-444c-b87e-f2693ba0bd61" alt="" /><span class="count c1">15人</span><span class="count c2">15人</span><span class="count c3">5人</span><span class="count c4">5人</span><span class="axis-label l1">A</span><span class="axis-label l2">B</span><span class="axis-label l3">C</span><span class="axis-label l4">D</span></div></article>
+              <article><h2>我们看到香蕉是黄色的，这是因为香蕉本身</h2><p class="question-options">A. 能发出黄色的光　B. 反射了太阳光中的黄光<br />C. 吸收了太阳光中的黄光　D. 能让所有颜色的光通过</p><div class="source-bar-chart color-q3"><div class="chart-options"><span>A. 能发出黄色的光</span><span>B. 反射了太阳光中的黄光</span><span>C. 吸收了太阳光中的黄光</span><span>D. 能让所有颜色的光通过</span></div><img class="chart-axis" src="https://www.figma.com/api/mcp/asset/dd191d32-89d3-4c90-a609-1b613c0643af" alt="" /><img class="bar b1" src="https://www.figma.com/api/mcp/asset/9f6fd664-bfbe-41e0-9fbc-29743dc904c4" alt="" /><img class="bar b2" src="https://www.figma.com/api/mcp/asset/9685b9e9-e94d-4868-ba90-6352cdd5c73a" alt="" /><img class="bar b3" src="https://www.figma.com/api/mcp/asset/de89b6ae-93be-4778-8203-d071708dc2a6" alt="" /><img class="bar b4" src="https://www.figma.com/api/mcp/asset/f6aa449c-9e82-47ec-a531-5bdd4fd709d6" alt="" /><span class="count c1">3人</span><span class="count c2">2人</span><span class="count c3">30人</span><span class="count c4">5人</span><span class="axis-label l1">A</span><span class="axis-label l2">B</span><span class="axis-label l3">C</span><span class="axis-label l4">D</span></div></article>
+              <article><h2>紫色石蕊试纸浸入到一种肥皂水中，可能变成什么颜色？</h2><p class="question-options">A. 红色　B. 蓝色<br />C. 紫色　D. 绿色</p><div class="source-bar-chart color-q4"><div class="chart-options"><span>A. 红色</span><span>B. 蓝色</span><span>C. 紫色</span><span>D. 绿色</span></div><img class="chart-axis" src="https://www.figma.com/api/mcp/asset/dd191d32-89d3-4c90-a609-1b613c0643af" alt="" /><img class="bar b1" src="https://www.figma.com/api/mcp/asset/6df2d3a1-afd1-49e2-9ac1-09b964d95c58" alt="" /><img class="bar b2" src="https://www.figma.com/api/mcp/asset/7d1595b5-9bf5-4a56-86c2-3a37a2feed5b" alt="" /><img class="bar b3" src="https://www.figma.com/api/mcp/asset/7e1d7fd6-87d4-4947-8655-7e06f444530d" alt="" /><img class="bar b4" src="https://www.figma.com/api/mcp/asset/2acb68e9-b2f9-4864-b43b-9f9bc3323e38" alt="" /><span class="count c1">5人</span><span class="count c2">15人</span><span class="count c3">10人</span><span class="count c4">10人</span><span class="axis-label l1">A</span><span class="axis-label l2">B</span><span class="axis-label l3">C</span><span class="axis-label l4">D</span></div></article>
+              <article><h2>红色光照射到白色衣服上，衣服会呈现什么颜色</h2><p class="question-options">A. 红色　B. 蓝色<br />C. 紫色　D. 绿色</p><div class="source-bar-chart color-q5"><div class="chart-options"><span>A. 红色</span><span>B. 蓝色</span><span>C. 紫色</span><span>D. 绿色</span></div><img class="chart-axis" src="https://www.figma.com/api/mcp/asset/dd191d32-89d3-4c90-a609-1b613c0643af" alt="" /><img class="bar b1" src="https://www.figma.com/api/mcp/asset/6df2d3a1-afd1-49e2-9ac1-09b964d95c58" alt="" /><img class="bar b2" src="https://www.figma.com/api/mcp/asset/7d1595b5-9bf5-4a56-86c2-3a37a2feed5b" alt="" /><img class="bar b3" src="https://www.figma.com/api/mcp/asset/7e1d7fd6-87d4-4947-8655-7e06f444530d" alt="" /><img class="bar b4" src="https://www.figma.com/api/mcp/asset/2acb68e9-b2f9-4864-b43b-9f9bc3323e38" alt="" /><span class="count c1">5人</span><span class="count c2">20人</span><span class="count c3">5人</span><span class="count c4">10人</span><span class="axis-label l1">A</span><span class="axis-label l2">B</span><span class="axis-label l3">C</span><span class="axis-label l4">D</span></div></article>
+              <article><h2>光的三原色混合得到</h2><p class="question-options">A. 黑色　B. 白色<br />C. 彩色　D. 红色</p><div class="source-bar-chart color-q6"><div class="chart-options"><span>A. 黑色</span><span>B. 白色</span><span>C. 彩色</span><span>D. 红色</span></div><img class="chart-axis" src="https://www.figma.com/api/mcp/asset/dd191d32-89d3-4c90-a609-1b613c0643af" alt="" /><img class="bar b1" src="https://www.figma.com/api/mcp/asset/6df2d3a1-afd1-49e2-9ac1-09b964d95c58" alt="" /><img class="bar b2" src="https://www.figma.com/api/mcp/asset/5f840d6b-77b4-4949-9a2a-ceedd42b8ccf" alt="" /><img class="bar b3" src="https://www.figma.com/api/mcp/asset/a3511a51-2766-43d0-b40f-b5725134b99e" alt="" /><img class="bar b4" src="https://www.figma.com/api/mcp/asset/2acb68e9-b2f9-4864-b43b-9f9bc3323e38" alt="" /><span class="count c1">5人</span><span class="count c2">15人</span><span class="count c3">10人</span><span class="count c4">10人</span><span class="axis-label l1">A</span><span class="axis-label l2">B</span><span class="axis-label l3">C</span><span class="axis-label l4">D</span></div></article>
+            </section>
+          </div>
+
+          <div class="screen student-portraits-screen" id="student-portraits" data-frame="96">
+            <div class="portrait-main">
+              <div class="portrait-title-row">
+                <h1>学生列表</h1>
+                <div class="portrait-search"><img src="https://www.figma.com/api/mcp/asset/9ea3d0ee-34a1-4114-a4ed-4ce8da82f45d" alt="" />搜索姓名或学号</div>
+              </div>
+              <section class="student-card-grid">
+                <article><b>01</b><h2>王思远</h2><div class="badges"><span class="purple">实验达人</span><span class="green">游戏高手</span></div><img class="student-photo" src="https://www.figma.com/api/mcp/asset/bc61282d-4cd1-4d8b-9768-72b62f4a8230" alt="" /><img class="medal" src="https://www.figma.com/api/mcp/asset/de2955ad-9b77-49d5-b4b2-814d45ece13b" alt="" /><button>查看他的画像</button></article>
+                <article><b>02</b><h2>李玉华</h2><div class="badges"><span class="red">科学之星</span><span class="yellow">创新达人</span></div><img class="student-photo" src="https://www.figma.com/api/mcp/asset/8bb8c8f1-121b-4e1f-a720-56647fe26fee" alt="" /><img class="medal" src="https://www.figma.com/api/mcp/asset/de2955ad-9b77-49d5-b4b2-814d45ece13b" alt="" /><button data-screen-target="student-portrait-detail">查看他的画像</button></article>
+                <article><b>03</b><h2>张浩然</h2><div class="badges"><span class="blue">好奇宝宝</span><span class="violet">钻研能手</span></div><img class="student-photo compact" src="https://www.figma.com/api/mcp/asset/19ec8560-b47e-4559-87c4-65fcc1e775c0" alt="" /><img class="medal muted" src="https://www.figma.com/api/mcp/asset/de1b147d-19ad-4bef-904b-2de97849fdec" alt="" /><button>查看他的画像</button></article>
+                <article><b>04</b><h2>刘舒涵</h2><div class="badges"><span class="red">科学之星</span><span class="green">游戏高手</span></div><img class="student-photo" src="https://www.figma.com/api/mcp/asset/442c485b-a30f-4223-bdda-ad5aaa6ab7f6" alt="" /><img class="medal" src="https://www.figma.com/api/mcp/asset/de2955ad-9b77-49d5-b4b2-814d45ece13b" alt="" /><button>查看她的画像</button></article>
+                <article><b>05</b><h2>陈俊超</h2><div class="badges"><span class="blue">好奇宝宝</span><span class="yellow">创新达人</span></div><img class="student-photo" src="https://www.figma.com/api/mcp/asset/adef942d-9ed3-4c6c-a8b8-1de06271c887" alt="" /><img class="medal" src="https://www.figma.com/api/mcp/asset/de2955ad-9b77-49d5-b4b2-814d45ece13b" alt="" /><button>查看他的画像</button></article>
+                <article><b>06</b><h2>张家庆</h2><div class="badges"><span class="cyan">逻辑大师</span><span class="sky">智慧少年</span></div><img class="student-photo" src="https://www.figma.com/api/mcp/asset/d99f23aa-2d75-4aa9-b7fb-f222d318cebc" alt="" /><img class="medal muted" src="https://www.figma.com/api/mcp/asset/de1b147d-19ad-4bef-904b-2de97849fdec" alt="" /><button>查看他的画像</button></article>
+                <article><b>07</b><h2>吴雨樊</h2><div class="badges"><span class="cyan">逻辑大师</span><span class="yellow">创新达人</span></div><img class="student-photo" src="https://www.figma.com/api/mcp/asset/1c4ec152-eb9c-42d3-8859-a4a20d7d4c3d" alt="" /><img class="medal" src="https://www.figma.com/api/mcp/asset/df6b2e4e-c704-4204-923e-a7a5ed602880" alt="" /><button>查看他的画像</button></article>
+                <article><b>08</b><h2>周锐</h2><div class="badges"><span class="red">科学之星</span><span class="sky">智慧少年</span></div><img class="student-photo" src="https://www.figma.com/api/mcp/asset/9a73a721-7087-470d-8c65-923f9031ace7" alt="" /><img class="medal" src="https://www.figma.com/api/mcp/asset/df6b2e4e-c704-4204-923e-a7a5ed602880" alt="" /><button>查看他的画像</button></article>
+                <article><b>09</b><h2>汪子默</h2><div class="badges"><span class="cyan">逻辑大师</span><span class="violet">钻研能手</span></div><img class="student-photo" src="https://www.figma.com/api/mcp/asset/d68bec95-c271-484c-ad44-185df97a994e" alt="" /><img class="medal muted" src="https://www.figma.com/api/mcp/asset/de1b147d-19ad-4bef-904b-2de97849fdec" alt="" /><button>查看他的画像</button></article>
+              </section>
+            </div>
+            <aside class="portrait-rank">
+              <h2>本周学习之星</h2>
+              <div class="rank-hero"><img src="https://www.figma.com/api/mcp/asset/442c485b-a30f-4223-bdda-ad5aaa6ab7f6" alt="" /><b>刘舒涵</b><span>测验完成率：100%</span><em>1</em></div>
+              <ol>
+                <li><img src="https://www.figma.com/api/mcp/asset/bc61282d-4cd1-4d8b-9768-72b62f4a8230" alt="" /><span>王思远<small>测验完成率：98%</small></span><b>2</b></li>
+                <li><img src="https://www.figma.com/api/mcp/asset/8bb8c8f1-121b-4e1f-a720-56647fe26fee" alt="" /><span>李玉华<small>测验完成率：96%</small></span><b>3</b></li>
+                <li><img src="https://www.figma.com/api/mcp/asset/adef942d-9ed3-4c6c-a8b8-1de06271c887" alt="" /><span>陈俊超<small>测验完成率：95%</small></span><b>4</b></li>
+                <li><img src="https://www.figma.com/api/mcp/asset/19ec8560-b47e-4559-87c4-65fcc1e775c0" alt="" /><span>张浩然<small>测验完成率：93%</small></span><b>5</b></li>
+                <li><img src="https://www.figma.com/api/mcp/asset/d68bec95-c271-484c-ad44-185df97a994e" alt="" /><span>汪子默<small>测验完成率：92%</small></span><b>6</b></li>
+                <li><img src="https://www.figma.com/api/mcp/asset/d99f23aa-2d75-4aa9-b7fb-f222d318cebc" alt="" /><span>张家庆<small>测验完成率：90%</small></span><b>7</b></li>
+                <li><img src="https://www.figma.com/api/mcp/asset/9a73a721-7087-470d-8c65-923f9031ace7" alt="" /><span>周锐<small>测验完成率：88%</small></span><b>8</b></li>
+              </ol>
+            </aside>
+          </div>
+
+          <div class="screen student-detail-screen" id="student-portrait-detail" data-frame="131">
+            <button class="back-chip portrait-back" data-screen-target="student-portraits"><img src="https://www.figma.com/api/mcp/asset/e738ba93-fd4e-4c3b-8ebd-7298c65d5f28" alt="" />返回</button>
+            <h1>李玉华的画像</h1>
+            <section class="student-detail-card">
+              <div class="detail-summary">
+                <img class="detail-medal" src="https://www.figma.com/api/mcp/asset/c76565be-7902-47d6-97b4-3ff1a287c906" alt="" />
+                <h2>李玉华</h2>
+                <div class="badges"><span class="red">科学之星</span><span class="yellow">创新达人</span></div>
+                <p>该生成绩较为优越，建议让他巩固第四单元（自然资源）</p>
+              </div>
+              <img class="detail-avatar" src="https://www.figma.com/api/mcp/asset/353fd418-0f4e-4b80-8f99-a87cbd31a5d3" alt="" />
+              <div class="mastery-chart">
+                <span class="axis-title">单元掌握程度</span>
+                <img class="chart-base" src="https://www.figma.com/api/mcp/asset/a35fa88b-b997-48b5-9d0b-a709f1271bed" alt="" />
+                <img class="unit-bar u1" src="https://www.figma.com/api/mcp/asset/b48ca9cd-86f9-4583-97ae-7cfb408408f4" alt="" />
+                <img class="unit-bar u2" src="https://www.figma.com/api/mcp/asset/99eea79f-2c58-4b8b-8b1f-da7771aeaf3f" alt="" />
+                <img class="unit-bar u3" src="https://www.figma.com/api/mcp/asset/cada44f1-3d79-497f-be3d-cea7c3634a53" alt="" />
+                <img class="unit-bar u4" src="https://www.figma.com/api/mcp/asset/2102b59d-6a10-47d1-a405-b4021086ba83" alt="" />
+                <img class="unit-bar u5" src="https://www.figma.com/api/mcp/asset/bf49e2ab-602f-49b8-bdad-1a4d64a2eff2" alt="" />
+                <img class="unit-bar u6" src="https://www.figma.com/api/mcp/asset/b0f6a171-59e2-47aa-b1d1-2643d546c3a5" alt="" />
+                <img class="axis-arrow x-arrow" src="https://www.figma.com/api/mcp/asset/7e7915b4-3571-49b8-88b7-f20814a06a76" alt="" />
+                <img class="axis-arrow y-arrow" src="https://www.figma.com/api/mcp/asset/4c733acb-93cb-4cd7-afc4-f081126c83ce" alt="" />
+                <b class="l1">良好</b><b class="l2">中等</b><b class="l3">优秀</b><b class="l4">合格</b><b class="l5">良好</b><b class="l6">中等</b>
+                <small class="t1">第一单元</small><small class="t2">第二单元</small><small class="t3">第三单元</small><small class="t4">第四单元</small><small class="t5">第五单元</small><small class="t6">第六单元</small>
+              </div>
+            </section>
+            <aside class="portrait-rank detail-rank">
+              <h2>本周学习之星</h2>
+              <div class="rank-hero"><img src="https://www.figma.com/api/mcp/asset/f602dd5f-aa72-442f-8905-c7ca41c51353" alt="" /><b>刘舒涵</b><span>测验完成率：100%</span><em>1</em></div>
+              <ol>
+                <li><img src="https://www.figma.com/api/mcp/asset/6aebc0ee-0e1e-485d-bf5f-0ee6e545f323" alt="" /><span>王思远<small>测验完成率：98%</small></span><b>2</b></li>
+                <li><img src="https://www.figma.com/api/mcp/asset/353fd418-0f4e-4b80-8f99-a87cbd31a5d3" alt="" /><span>李玉华<small>测验完成率：96%</small></span><b>3</b></li>
+                <li><img src="https://www.figma.com/api/mcp/asset/0719268f-0ebd-4c41-9324-af84a9f26373" alt="" /><span>陈俊超<small>测验完成率：95%</small></span><b>4</b></li>
+                <li><img src="https://www.figma.com/api/mcp/asset/6a5266c2-970a-4104-82b3-166228a9a242" alt="" /><span>张浩然<small>测验完成率：93%</small></span><b>5</b></li>
+                <li><img src="https://www.figma.com/api/mcp/asset/97899ee4-a4cb-4218-8683-e6f93ca49713" alt="" /><span>汪子默<small>测验完成率：92%</small></span><b>6</b></li>
+              </ol>
+            </aside>
+          </div>
+
+          <div class="screen resources-screen" id="teaching-resources" data-frame="55">
+            <section class="resource-grid">
+              <button class="folder-card active"><em class="folder-note top">蜡烛的燃烧</em><em class="folder-note lower">生锈与防锈</em><div class="folder-art"><img src="https://www.figma.com/api/mcp/asset/06080119-6d55-4ed7-90ef-4bc5908217b2" alt="" /></div><h2>第一单元</h2><p>物质的变化</p><span>170.3 MB</span></button>
+              <button class="folder-card"><div class="folder-art"><img src="https://www.figma.com/api/mcp/asset/188ea570-9c21-4476-a7c3-60938a6b1071" alt="" /></div><h2>第二单元</h2><p>田野的生物</p><span>170.3 MB</span></button>
+              <button class="folder-card"><div class="folder-art"><img src="https://www.figma.com/api/mcp/asset/6b5433ee-2203-4f11-ac4f-f43cdcbcc5c0" alt="" /></div><h2>第三单元</h2><p>天气的成因</p><span>170.3 MB</span></button>
+              <button class="folder-card"><div class="folder-art"><img src="https://www.figma.com/api/mcp/asset/6b5433ee-2203-4f11-ac4f-f43cdcbcc5c0" alt="" /></div><h2>第四单元</h2><p>自然资源</p><span>170.3 MB</span></button>
+              <button class="folder-card"><div class="folder-art"><img src="https://www.figma.com/api/mcp/asset/6b5433ee-2203-4f11-ac4f-f43cdcbcc5c0" alt="" /></div><h2>第五单元</h2><p>建造植物工厂</p><span>170.3 MB</span></button>
+            </section>
+            <aside class="resource-info">
+              <h2>信息</h2>
+              <section><p>文档</p><strong>10.2GB</strong><i><span style="width:72%"></span></i><em>⋮</em></section>
+              <section><p>图片</p><strong>112.2MB</strong><i><span style="width:72%"></span></i><em>⋮</em></section>
+              <h2>属性</h2>
+              <dl><dt>大小</dt><dd>170.3 MB</dd><dt>创建时间</dt><dd>2025/07/21</dd><dt>最后修改</dt><dd>2025/09/16</dd></dl>
+            </aside>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
